@@ -1,0 +1,142 @@
+body {
+	background: #e5e5e5;
+	color: #25282B;
+	margin: 0;
+	font-family: Montserrat , sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #ff5E84;
+	font-weight: bold;
+}
+a:hover{
+	text-decoration: underline;
+}
+p , .description{
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.1px;
+}
+#conteiner{
+	width: 80%;
+	max-width: 980px;
+	margin: 40px auto;
+	display: flex;
+}
+#esquerda{
+	width: 300px;
+	margin-right: 150px;
+}
+main{
+	margin: 32px 0;
+}
+#buttons{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 32px;
+}
+footer{
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+	letter-spacing: 0,2px;
+	}
+button {
+	color: #ff5E84;
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+	letter-spacing: 0,2px;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+.button {
+	width: 150px;
+	height: 40px;
+
+	background-color: #ff5E84;
+	color: white;
+
+	font-size: 14px;
+	font-weight: bold;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 8px;
+	
+	box-shadow: 0px 8px 16px rgba(255,0,92,0.3);
+}
+
+.idea{
+	display: flex;
+	background-color: #FFF;
+	padding: 32px;
+	box-shadow: 0px 4px 16px -8px rgba(1,1,1,1);
+	border-radius: 8px;
+	margin-bottom: 32px;
+}
+.idea img{
+	width: 60px;
+	height: 60px;
+	margin-right: 32px;
+}
+.idea h3{
+	margin: 0;
+}
+.idea p{
+	margin: 10px 0;
+}
+
+/* pagina 2*/
+#page-ideia #conteiner{
+	display: block;
+}
+
+#page-ideia header{
+	display: flex;
+	justify-content: space-between;
+}
+#page-ideia nav{
+	display: flex;
+	align-items: center;
+}
+#page-ideia nav li{
+	list-style-type: none;
+	margin-right: 16px;
+}
+#page-ideia nav li:last-child{
+	margin: 0;
+}
+
+#page-ideia nav li:last-child a:hover{
+	background-color: #0984e3;
+	text-decoration: none;
+}
+
+#page-ideia section#title{
+	text-align: center;
+}
+#page-ideia section#title p{
+	opacity: 0.7;
+	margin: 0;
+}
+#page-ideia section#title h1{
+	margin: 0;
+}
+
+#page-ideia section#ideias{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap:20px;
+}
+#page-ideia section#ideias .ideia{
+	margin: 0;
+}
+#page-ideia section#ideias,section#title,footer{
+	margin-top: 50px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="formulario.css">
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div id="modal">
+		<div class="content">
+			<h1>Nova Ideia</h1>
+			<form action="/formulario" method="POST" onsubmit="return checkfields(event)">
+				<div class="divisao">
+					<label for="title">Titulo da Ideia</label>
+					<input type="text" name="title">
+				</div>
+
+				<div class="divisao">
+					<label for="category">Categoria</label>
+					<input type="text" name="category">
+				</div>
+
+				<div class="divisao">
+					<label for="image">Link da Imagem</label>
+					<input type="url" name="image">
+				</div>
+
+				<div class="divisao">
+					<label for="description">Digite a Descrição da sua Ideia</label>
+					<textarea name="description" cols="30" rows="10"></textarea>
+				</div>
+
+				<div class="divisao">
+					<label for="Link">Link da Ideia</label>
+					<input type="url" name="Link">
+				</div>
+				<button class="voltar"><a href="/">Voltar</a></button>
+				<button id="salvar">Salvar</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

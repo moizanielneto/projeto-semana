@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ideias</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body id="page-ideia">
+	<div id="conteiner">
+	<header>
+		<img src="logo.jpg">
+		<nav>
+
+			<li><a href="/">Inicio</a></li>
+			<li><a href="">Ideias</a></li>
+			<li><a class="button" href="/formulario">Nova Ideia</a></li>
+
+		</nav>
+	</header>
+
+	<section id="title">
+		<p>Em Exibição</p>
+		<h1>Ideias</h1>
+	</section>
+
+	<main>
+		<section id="ideias">
+			{% include "conteudoideias.html" %}
+		</section>
+	</main>
+	<footer>
+		Com<font  color="red"> ❤</font> Neto
+	</footer>
+	</div>
+</body>
+</html>

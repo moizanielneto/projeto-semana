@@ -1,0 +1,77 @@
+body{
+    overflow: hidden;
+}
+#modal {
+	background:LightBlue;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.content{
+	margin-top: 0px;
+	color: white;
+}
+.content h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+#modal form{
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+.content form div:nth-child(3),.content form div:nth-child(4),.content form div:nth-child(5){
+	grid-column: span 2;
+}
+form input ,form textarea{
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	border: 1px solid SkyBlue;
+	font-size: 16px;
+}
+form label{
+	font-weight: 600;
+	line-height: 32px;
+	letter-spacing: 0.8px;
+}
+.voltar{
+	background:#ffffff22; 
+	width: 150px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 6px;
+	align-self: end;
+}
+.voltar:hover{
+	background: #fff;
+}
+.voltar a{
+	color: black;
+	text-decoration: none;
+}
+
+#salvar{
+	background: white;
+	width: 150px;
+	height: 40px;
+	border-radius: 6px;
+	cursor: pointer;
+	grid-column: 2;
+	justify-self:end;
+}
+#salvar:hover{
+	background: SkyBlue;
+	color: white;
+}

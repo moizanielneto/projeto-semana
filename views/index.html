@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Casa criativa</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div id="conteiner">
+		<section id="esquerda">
+			<header>
+				<img src="logo.jpg">
+			</header>
+			<main>
+			 	<p>
+		    		Ficar em casa em períodos longos, não deve ser nada fácil.
+				</p>
+				<p>
+		    		Iremos catalogar ideias,<strong> brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
+				</p>
+				<p>
+		    		Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.
+				</p>
+			</main>
+			<section id="buttons">
+				<button><a href="/formulario">+ Adicionar Ideias</a></button>
+				<a class="button" href="/pagina2">Ver Ideias</a>
+			</section>
+			<footer>
+				Com<font  color="red"> ❤</font> Neto
+			</footer>
+		</section>
+		<section id="direita">
+			{% include "conteudoideias.html" %}
+		</section>
+	</div>
+</body>
+</html>
